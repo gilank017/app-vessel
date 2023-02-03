@@ -1,0 +1,89 @@
+.sidebar {
+  display: block!important;
+}
+
+.no-sidebar {
+  display: none;
+}
+
+.sidebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: 100%;
+}
+
+.vertical-menu {
+  animation-name: panelInLeft;
+  animation-duration: 1s;
+  width: 390px;
+  z-index: 1005;
+  background-color: #305296;
+  position: absolute;
+  bottom: 0;
+  top: 100px;
+  box-shadow: 0 2px 4px rgba(15,34,58,.12);
+  transition: width 3s;
+  height: 60rem;
+}
+
+.sidebar-menu {
+  padding: 40px 27px 31px;
+  height: calc(100% - 4rem);
+}
+
+
+
+.menu-style {
+  padding: 0px;
+  list-style: none;
+}
+
+.menu-list {
+  font-family: 'Inter', sans-serif;
+  padding: 15px 32px;
+  border-radius: 8px;
+  color: #ffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.link-text {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.menu-list:hover {
+  background-color: #ffff;
+  padding: 15px 32px;
+  color: #40609E;
+}
+
+.active-menu {
+  background-color: #ffff;
+  padding: 15px 32px;
+  color: #40609E;
+}
+
+.active-text {
+  color: #40609E;
+  text-decoration: none;
+}
+
+.weather-logo {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes panelInLeft {
+  0% {
+    transform: translateX(-12rem)
+  }
+  100% {
+    transform: translateX(0rem)
+  }
+}
+    

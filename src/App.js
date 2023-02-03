@@ -1,24 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Routes, Route} from 'react-router-dom'
+import DashboardLayout from "./layout/DashboardLayout";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import Schedule from "./pages/Schedule";
+import Activity from "./pages/Activity";
+import ActivityId from "./pages/ActivityId";
+import Vessel from "./pages/Vessel";
+import Crewlist from "./pages/Crewlist";
+import Setting from "./pages/Setting";
+import User from "./pages/User";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const element = [
+    {
+      path: '/',
+      element: <Home />
+    },
+    {
+      path: '/dashboard',
+      element: <Dashboard />
+    },
+    {
+      path: '/schedule',
+      element: <Schedule />
+    },
+    {
+      path: '/activity',
+      element: <Activity />
+    },
+    {
+      path: '/activity/:id',
+      element: <ActivityId />
+    },
+    {
+      path: '/vessel',
+      element: <Vessel />
+    },
+    {
+      path: '/crew',
+      element: <Crewlist />
+    },
+    {
+      path: '/setting',
+      element: <Setting />
+    },
+    {
+      path: '/profile',
+      element: <User />
+    },
+  ]
+
+  const routeList = element.map((val, index) => {
+    return (
+      <Route key={index} path={val.path} element={val.element} />
+    )
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DashboardLayout>
+      <Routes>
+        {routeList}
+      </Routes>
+    </DashboardLayout>
   );
 }
 

@@ -1,0 +1,122 @@
+.card-list {
+  background-color:#40609E !important;
+  border-radius: 20px !important;
+  height: 10rem !important;
+  padding: 20px !important;
+  cursor: pointer;
+}
+
+.card-data {
+  background-color:#40609E !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  width: 30rem;
+}
+
+.text-name {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.145em;
+  color: #ffff !important;
+}
+
+.label-name {
+  font-family: 'Inter', sans-serif;
+  color: #36599A !important;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.form-input {
+  border: 4px solid #40609E !important;
+  border-radius: 15px !important;
+  padding: 8px !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #36599A !important;
+}
+
+.form-group {
+  border: 4px solid #40609E !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  padding: 8px !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #36599A !important;
+}
+
+.prepend-blue {
+  border: 4px solid #40609E !important;
+  background-color: #36599A !important;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  color: #ffff !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  width: 25% !important;
+  display: flex !important;
+  border-right: 0px;
+  justify-content: center !important;
+}
+
+.prepend-gray {
+  border: 4px solid #40609E !important;
+  background-color:#E4E4E7 !important;
+  border-right: 0px !important;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  color: #40609E !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  width: 25% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.form-group-gray {
+  border: 4px solid #40609E !important;
+  border-left: 0px !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  padding: 8px !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #36599A !important;
+}
+
+.logo-ship {
+  width: 15% !important;
+  margin: 0px 12px !important;
+}
+
+.data-vessel {
+  display: flex;
+  align-items: center;
+}
+
+.button-print {
+  background-color: #36599A !important;
+  color: #ffff !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  margin-right: 14px !important;
+  border: none !important;
+  padding: 10px 20px !important;
+}
+.button-excel {
+  background-color:#E4E4E7 !important;
+  color: #36599A !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  border: none !important;
+  padding: 10px 20px !important;
+}

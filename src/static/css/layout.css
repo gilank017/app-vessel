@@ -1,0 +1,16 @@
+.main-content {
+  margin-left: 25rem;
+  overflow: hidden;
+  transition: margin-left 1s;
+  min-height: inherit;
+}
+
+.page-content {
+  padding: 2rem calc(1.25rem / 2) 0rem calc(1.25rem / 2);
+  min-height: inherit;
+}
+
+.no-sidebar {
+  margin-left: 0!important;
+  display: block;
+}
